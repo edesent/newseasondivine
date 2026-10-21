@@ -83,6 +83,16 @@ export default function Seminary() {
             </p>
           </div>
           <div data-reveal className="grid content-start gap-6">
+            <div className="framed rotate-[-1deg] rounded-[4px]">
+              <Image
+                src={photos.chaplaincyEnrollment.src}
+                alt={photos.chaplaincyEnrollment.alt}
+                width={photos.chaplaincyEnrollment.w}
+                height={photos.chaplaincyEnrollment.h}
+                sizes="(min-width: 1024px) 440px, 90vw"
+                className="block h-auto w-full rounded-[2px]"
+              />
+            </div>
             <div className="framed rotate-[1deg] rounded-[4px]">
               <Image
                 src={photos.certificate.src}
@@ -93,6 +103,9 @@ export default function Seminary() {
                 className="block h-auto w-full rounded-[2px]"
               />
             </div>
+            <p className="text-[0.92rem] text-muted">
+              The six-month Certified Chaplain Program meets Monday nights from 7 to 9 PM, with the fall class beginning September 14, 2026.
+            </p>
             <p className="text-[0.92rem] text-muted">
               A chaplain certificate from the Institute, issued together with Higher Ground Ministries, Inc. Recent chaplains have also completed the Chaplain
               Ministry Program of the Disciples of Christ Bible College & Seminary.

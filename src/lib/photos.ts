@@ -80,4 +80,22 @@ export const photos = {
     646,
     2000,
   ),
+  familyFriends: p(
+    "family-friends-sabbath.webp",
+    "New Season Divine Ministries Family and Friends invitation with Senior Pastor Dr. Heldin C. Gordon and Apostle Dr. Sctonda Kelly Gordon, Saturday worship times, and Augusta location",
+    1024,
+    1536,
+  ),
+  chaplaincyEnrollment: p(
+    "chaplaincy-enrollment.webp",
+    "New Season Divine Ministries flyer inviting students to become a certified chaplain through a six-month Monday-night program",
+    1024,
+    1536,
+  ),
+  powerUpPrayer: p(
+    "power-up-in-prayer.webp",
+    "Power Up in Prayer on the Sctonda Kelly Gordon Show flyer with weekday WNRR radio and WBPI-TV 49 broadcast information",
+    1024,
+    1536,
+  ),
 };

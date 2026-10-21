@@ -62,6 +62,16 @@ export default function Worship() {
             <blockquote className="verse text-[clamp(1.7rem,3vw,2.4rem)] text-ink/85">“Remember the sabbath day, to keep it holy.”</blockquote>
             <figcaption className="eyebrow mt-3 text-[0.68rem] text-muted">Exodus 20:8</figcaption>
           </figure>
+          <figure data-reveal className="framed mx-auto mt-16 max-w-xl rounded-[4px]">
+            <Image
+              src={photos.familyFriends.src}
+              alt={photos.familyFriends.alt}
+              width={photos.familyFriends.w}
+              height={photos.familyFriends.h}
+              sizes="(min-width: 768px) 560px, 92vw"
+              className="block h-auto w-full rounded-[2px]"
+            />
+          </figure>
         </div>
       </section>
 

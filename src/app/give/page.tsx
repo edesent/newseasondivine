@@ -5,7 +5,7 @@ import { org, sabbath } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Give",
-  description: `Give to ${org.name} by Cash App at $${org.cashTag}: for the church, the Kenya Bibles, outreach to families and the Seminary.`,
+  description: `Give securely to ${org.name} through Tithely or Cash App: support worship, outreach, missions, and the Seminary.`,
   alternates: { canonical: "/give" },
 };
 
@@ -19,7 +19,37 @@ const notes = [
 export default function Give() {
   return (
     <>
-      <PageHead eyebrow="Give" title="Sow into a new season." lead="Give by Cash App from your phone, or in person on the Sabbath." />
+      <PageHead eyebrow="Give" title="Sow into a new season." lead="Give securely online through Tithely, through Cash App, or in person on the Sabbath." />
+
+      <section className="night border-b border-gold/30 py-14 md:py-16">
+        <div data-reveal className="wrap flex flex-col items-start justify-between gap-6 md:flex-row md:items-center">
+          <div>
+            <p className="eyebrow text-[0.7rem] text-gold-hi">Secure online giving</p>
+            <h2 className="display mt-3 text-[clamp(1.8rem,4vw,2.8rem)]">Give through Tithely.</h2>
+            <p className="mt-3 max-w-2xl text-[1.05rem] text-mist">Use the ministry’s secure Tithely form for a one-time gift or recurring giving.</p>
+          </div>
+          <a href={org.tithelyUrl} target="_blank" rel="noopener noreferrer" className="btn btn-gold shrink-0">
+            Open secure giving
+          </a>
+        </div>
+      </section>
+
+      <section className="bg-ivory py-16 md:py-20">
+        <div className="wrap">
+          <div data-reveal className="mx-auto max-w-3xl overflow-hidden rounded-2xl border border-ink/10 bg-white shadow-[0_24px_60px_-36px_rgb(20_12_12/0.45)]">
+            <iframe
+              src={org.tithelyUrl}
+              title={`${org.name} secure Tithely giving form`}
+              loading="lazy"
+              className="h-[780px] w-full border-0 md:h-[840px]"
+              allow="payment"
+            />
+          </div>
+          <p className="mx-auto mt-5 max-w-3xl text-center text-[0.94rem] text-muted">
+            If the form does not load on your device, use the “Open secure giving” button above.
+          </p>
+        </div>
+      </section>
 
       <section className="bg-paper py-20 md:py-28">
         <div className="wrap grid items-start gap-12 lg:grid-cols-[1fr_1fr] lg:gap-20">

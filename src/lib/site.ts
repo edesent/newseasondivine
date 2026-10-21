@@ -24,7 +24,7 @@ export const org = {
   initials: "NSDM",
   seminary: "New Season Divine Ministries Theological Seminary & Chaplaincy Institute",
   seminaryShort: "Theological Seminary & Chaplaincy Institute",
-  tagline: "Educating, equipping and empowering Kingdom leaders to fulfill their Kingdom mandate.",
+  tagline: "A ministry of transformation, restoration, education, empowerment, and Kingdom advancement.",
   motto: "Changing lives through Kingdom education",
   affiliation: "United Ecumenical Communion of Christ",
   city: "Augusta",
@@ -39,6 +39,7 @@ export const org = {
   /** Live at cash.app/$NewSeasonDM (registered to Sctonda Gordon). */
   cashTag: "NewSeasonDM",
   cashUrl: "https://cash.app/$NewSeasonDM",
+  tithelyUrl: "https://give.tithe.ly/?formId=f4636f9a-8ebe-408c-b33d-4f6c8c2a9af9",
   maps: "https://www.google.com/maps/search/?api=1&query=3521+Jack+Kelly+Rd+Augusta+GA",
   /** The ministry has no Facebook Page; the pastors post from their own profiles. */
   facebookHeldin: "https://www.facebook.com/heldin.gordon",
@@ -68,6 +69,7 @@ export const sabbath = [
 
 /** Short labels go in the desktop bar; the phone menu and footer use the full label. */
 export const nav = [
+  { href: "/about", label: "About New Season", short: "About" },
   { href: "/worship", label: "Sabbath Worship", short: "Worship" },
   { href: "/seminary", label: "Seminary & Chaplaincy", short: "Seminary" },
   { href: "/outreach", label: "Outreach & Missions", short: "Outreach" },
@@ -207,9 +209,9 @@ export const honoraryPackage = [
  * the full list and tuition are blanks until the Chancellor sends them.
  */
 export const programs = {
-  list: "",
+  list: "Six-month Certified Chaplain Program",
   tuition: "",
-  nextTerm: "",
+  nextTerm: "Monday, September 14, 2026 · 7–9 PM",
 };
 
 /** Topics on the contact form. The seminary ones route the same way, but say what the visitor wants. */

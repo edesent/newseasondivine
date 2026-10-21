@@ -67,10 +67,10 @@ export default function OnAirPage() {
             </ul>
             <div className="framed mt-10 rounded-[4px]">
               <Image
-                src={photos.sctondaStudio.src}
-                alt={photos.sctondaStudio.alt}
-                width={photos.sctondaStudio.w}
-                height={photos.sctondaStudio.h}
+                src={photos.powerUpPrayer.src}
+                alt={photos.powerUpPrayer.alt}
+                width={photos.powerUpPrayer.w}
+                height={photos.powerUpPrayer.h}
                 sizes="(min-width: 1024px) 460px, 90vw"
                 className="block h-auto w-full rounded-[2px]"
               />

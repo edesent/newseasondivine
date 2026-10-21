@@ -50,7 +50,7 @@ export default function Home() {
         <div className="wrap grid gap-10 pb-14 pt-8 lg:grid-cols-[1.25fr_0.75fr] lg:gap-16 lg:pb-16">
           <div>
             <p className="max-w-2xl text-lg text-ivory/90 md:text-[1.28rem] md:leading-relaxed">
-              A Sabbath congregation, a theological seminary and chaplaincy institute, and a voice on Augusta gospel radio. Led by Senior Pastor{" "}
+              {org.tagline} A Sabbath congregation, theological seminary and chaplaincy institute, and a voice on Augusta gospel radio led by Senior Pastor{" "}
               {pastors.heldin.name} and Apostle {pastors.sctonda.name}.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
@@ -87,17 +87,20 @@ export default function Home() {
         <div className="wrap grid gap-12 md:grid-cols-[1.15fr_0.85fr] md:gap-16">
           <div data-reveal>
             <p className="eyebrow text-[0.72rem] text-crimson">Who we are</p>
-            <h2 className="display mt-4 text-[clamp(2rem,4.4vw,3.4rem)]">A church, a seminary, and a voice on the air.</h2>
+            <h2 className="display mt-4 text-[clamp(2rem,4.4vw,3.4rem)]">A ministry of transformation and restoration.</h2>
             <div className="prose-nsdm mt-6 max-w-2xl text-[1.12rem] leading-relaxed text-ink/85">
               <p>
-                New Season Divine Ministries is a small congregation in {org.city} that keeps the Sabbath. We meet every Saturday morning to pray, open the
-                Scriptures together in Sabbath School, and worship.
+                {org.name} is a Christ-centered, Kingdom-focused ministry dedicated to transforming lives, restoring hope, developing spiritual leaders,
+                and empowering individuals to fulfill their God-given purpose and divine mandate.
               </p>
               <p>
-                Alongside the church is the {org.seminaryShort}, where pastors, chaplains and Kingdom leaders are trained and sent. And through Apostle
-                Sctonda, the ministry is heard every weekday on WNRR Gospel radio and seen on WBPI-TV 49, after more than thirty years of ministry and media.
+                Through prayer, worship, biblical education, leadership development, chaplaincy training, community outreach, and spiritual mentorship, we
+                equip people to move from where they are into what God has called them to become.
               </p>
             </div>
+            <Link href="/about" className="btn btn-line mt-8">
+              Our mission and vision
+            </Link>
           </div>
           <figure data-reveal className="self-center border-l-2 border-gold pl-6 md:pl-8">
             <blockquote className="verse text-[clamp(1.8rem,3.2vw,2.6rem)] text-crimson">“Your season is not your final destination.”</blockquote>
