@@ -192,45 +192,20 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ---------------------------------------------------------- Dec 5 */}
+      {/* ---------------------------------------------------------- Invitation graphic */}
       {showElevation ? (
-        <section className="curtain relative overflow-hidden py-20 text-ivory md:py-28">
-          <div className="wrap">
-            <div
-              data-reveal
-              className="mx-auto max-w-3xl rounded-[28px] border border-gold/70 bg-[rgb(20_6_8/0.62)] p-8 text-center shadow-[0_40px_80px_-30px_rgb(0_0_0/0.8)] md:p-14"
-            >
-              <p className="eyebrow text-[0.72rem] text-gold-hi">You are invited</p>
-              <div className="ornament mx-auto mt-5 max-w-xs">
-                <span aria-hidden className="block h-2 w-2 rotate-45 bg-gold" />
-              </div>
-              <h2 className="display mt-6 text-[clamp(1.9rem,4.4vw,3.3rem)]">{elevation.name}</h2>
-              <p className="verse mt-4 text-2xl text-gold-hi md:text-[1.75rem]">{elevation.theme}</p>
-              <div className="mt-9 grid gap-6 sm:grid-cols-3 sm:gap-4">
-                <div>
-                  <p className="eyebrow text-[0.66rem] text-mist">When</p>
-                  <p className="mt-1.5 font-semibold">{elevation.dateText}</p>
-                  <p className="mt-1 text-[0.95rem] text-mist">
-                    <Fill value={elevation.time} label="Start time" />
-                  </p>
-                </div>
-                <div>
-                  <p className="eyebrow text-[0.66rem] text-mist">Where</p>
-                  <p className="mt-1.5 font-semibold">{org.city}, Georgia</p>
-                  <p className="mt-1 text-[0.95rem] text-mist">
-                    <Fill value={elevation.place} label="Venue" />
-                  </p>
-                </div>
-                <div>
-                  <p className="eyebrow text-[0.66rem] text-mist">In</p>
-                  <p className="display mt-1 text-4xl text-gold-hi">{days}</p>
-                  <p className="text-[0.95rem] text-mist">{days === 1 ? "day" : "days"}</p>
-                </div>
-              </div>
-              <Link href="/elevation" className="btn btn-gold mt-10">
-                About the celebration
-              </Link>
-            </div>
+        <section className="bg-night py-12 md:py-20" aria-label="Ecumenical Elevation Celebration invitation">
+          <div className="wrap mx-auto max-w-5xl">
+            <Link href="/elevation" aria-label="Learn more about the Ecumenical Elevation Celebration">
+              <Image
+                src="/events/gradua.png"
+                alt="Invitation graphic for the Ecumenical Elevation Celebration"
+                width={1200}
+                height={1600}
+                sizes="(min-width: 1024px) 960px, 100vw"
+                className="mx-auto h-auto w-full rounded-xl object-contain"
+              />
+            </Link>
           </div>
         </section>
       ) : null}
