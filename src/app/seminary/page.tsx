@@ -93,16 +93,6 @@ export default function Seminary() {
                 className="block h-auto w-full rounded-[2px]"
               />
             </div>
-            <div className="framed rotate-[1deg] rounded-[4px]">
-              <Image
-                src={photos.certificate.src}
-                alt={photos.certificate.alt}
-                width={photos.certificate.w}
-                height={photos.certificate.h}
-                sizes="(min-width: 1024px) 440px, 90vw"
-                className="block h-auto w-full rounded-[2px]"
-              />
-            </div>
             <p className="text-[0.92rem] text-muted">
               The six-month Certified Chaplain Program meets Monday nights from 7 to 9 PM, with the fall class beginning September 14, 2026.
             </p>
