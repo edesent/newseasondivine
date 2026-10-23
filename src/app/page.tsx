@@ -50,8 +50,8 @@ export default function Home() {
         <div className="wrap grid gap-10 pb-14 pt-8 lg:grid-cols-[1.25fr_0.75fr] lg:gap-16 lg:pb-16">
           <div>
             <p className="max-w-2xl text-lg text-ivory/90 md:text-[1.28rem] md:leading-relaxed">
-              {org.tagline} A Sabbath congregation, theological seminary and chaplaincy institute, and a voice on Augusta gospel radio led by Senior Pastor{" "}
-              {pastors.heldin.name} and Apostle {pastors.sctonda.name}.
+              {org.tagline} A Sabbath congregation and a theological seminary and chaplaincy institute, led by Senior Pastor {pastors.heldin.name} and
+              Apostle {pastors.sctonda.name}, whose voice Augusta knows from gospel radio and television.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link href="/worship" className="btn btn-gold">
@@ -244,7 +244,7 @@ export default function Home() {
             <h2 className="display mt-6 text-[clamp(2.1rem,4.8vw,3.7rem)]">Weekdays at nine, on 1380 AM and 93.3 FM.</h2>
             <p className="mt-5 max-w-xl text-[1.12rem] leading-relaxed text-mist">
               <strong className="text-ivory">{show.name}</strong> is on {show.radio} every weekday from 9 to 11 in the morning, and at noon on {show.tv}.
-              Spiritual conversation, motivation, life talks, prayer and celebrity interviews, hosted by the station’s program director.
+              Spiritual conversation, motivation, life talks, prayer and celebrity interviews, hosted by Apostle Sctonda, the station’s program director.
             </p>
             <RadioDial className="mt-8 w-full max-w-xl" />
             <div className="mt-8 flex flex-wrap gap-3">
@@ -256,7 +256,7 @@ export default function Home() {
               </Link>
             </div>
           </div>
-          <div data-reveal className="grid gap-6">
+          <div data-reveal>
             <div className="framed rounded-[4px]">
               <Image
                 src={photos.sctondaStudio.src}
@@ -267,26 +267,6 @@ export default function Home() {
                 className="block h-auto w-full rounded-[2px]"
               />
             </div>
-            <a
-              href={org.facebookHeldin}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group grid grid-cols-[8.5rem_1fr] items-center gap-4 rounded-2xl border border-ivory/12 p-3 transition-colors hover:border-gold/60 sm:grid-cols-[10rem_1fr]"
-            >
-              <Image
-                src={photos.fifteenMinutes.src}
-                alt={photos.fifteenMinutes.alt}
-                width={photos.fifteenMinutes.w}
-                height={photos.fifteenMinutes.h}
-                sizes="160px"
-                className="aspect-video h-auto w-full rounded-xl object-cover"
-              />
-              <span>
-                <span className="eyebrow block text-[0.64rem] text-gold-hi">Live on Facebook</span>
-                <span className="display mt-1 block text-lg">15 Minutes with Jesus</span>
-                <span className="mt-1 block text-[0.92rem] text-mist">Pastor Heldin’s live Bible talk. A recent guest: Apostle Sctonda, on the Feast of Tabernacles. →</span>
-              </span>
-            </a>
           </div>
         </div>
       </section>

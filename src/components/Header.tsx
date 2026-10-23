@@ -118,7 +118,7 @@ export default function Header({ showElevation }: { showElevation: boolean }) {
             </Link>
           ))}
           <Link href="/give" className="btn btn-gold mt-8 self-start">
-            Give by Cash App
+            Give online
           </Link>
           <p className="mt-8 text-[0.98rem] text-mist">
             Every Sabbath (Saturday) from {sabbath[0].at} {sabbath[0].ampm}

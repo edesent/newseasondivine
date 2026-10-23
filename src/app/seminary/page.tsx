@@ -232,6 +232,17 @@ export default function Seminary() {
                 Pastors, ask us about the Nehemiah Project. Pick it on the form, or call <Obf b64={org.phoneB64} className="font-semibold text-crimson hover:underline" />.
               </p>
             </div>
+            <div className="mt-6 rounded-2xl border border-ink/12 bg-white p-6">
+              <p className="eyebrow text-[0.68rem] text-crimson">Already enrolled?</p>
+              <h3 className="display mt-2 text-[1.5rem]">Pay tuition & fees online</h3>
+              <p className="mt-2 text-[1.02rem] text-ink/80">
+                Pay through the ministry’s secure Tithely form, by card or bank. Put your name as it appears on your enrollment so the Chancellor’s office can
+                match the payment.
+              </p>
+              <a href={org.tithelyUrl} target="_blank" rel="noopener noreferrer" className="btn btn-crimson mt-5">
+                Pay through Tithely
+              </a>
+            </div>
           </div>
           <div data-reveal className="card p-6 md:p-9">
             <EnrollForm />

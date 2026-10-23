@@ -5,11 +5,11 @@ import PageHead from "@/components/PageHead";
 import RadioDial from "@/components/RadioDial";
 import VideoFacade from "@/components/VideoFacade";
 import { photos } from "@/lib/photos";
-import { appearances, org, pastors, show } from "@/lib/site";
+import { appearances, pastors, show } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Radio & Television",
-  description: `${show.name}: weekdays 9 to 11 AM on ${show.radio}, and at noon on ${show.tv}. Plus television appearances and 15 Minutes with Jesus.`,
+  description: `${show.name}: weekdays 9 to 11 AM on ${show.radio}, and at noon on ${show.tv}. Plus her television appearances.`,
   alternates: { canonical: "/on-air" },
 };
 
@@ -34,7 +34,7 @@ export default function OnAirPage() {
             <p className="eyebrow text-[0.72rem] text-crimson">The show</p>
             <h2 className="display mt-4 text-[clamp(2rem,4.6vw,3.5rem)]">{show.name}</h2>
             <p className="mt-5 max-w-2xl text-[1.12rem] leading-relaxed text-ink/85">
-              Spiritual conversation, motivation, life talks, prayer and celebrity interviews, on the station where Dr. Gordon is program director.
+              Spiritual conversation, motivation, life talks, prayer and celebrity interviews, on the station where Apostle Sctonda is program director.
             </p>
             <div className="mt-10 grid gap-4 sm:grid-cols-2">
               <div className="card p-6">
@@ -111,27 +111,6 @@ export default function OnAirPage() {
                   </a>
                 ) : null,
               )}
-              <a
-                data-reveal
-                href={org.facebookHeldin}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group overflow-hidden rounded-2xl border border-ivory/15 transition-colors hover:border-gold/60"
-              >
-                <Image
-                  src={photos.fifteenMinutes.src}
-                  alt={photos.fifteenMinutes.alt}
-                  width={photos.fifteenMinutes.w}
-                  height={photos.fifteenMinutes.h}
-                  sizes="(min-width: 1024px) 380px, 92vw"
-                  className="block aspect-video h-auto w-full object-cover"
-                />
-                <span className="block p-6">
-                  <span className="eyebrow block text-[0.64rem] text-gold-hi">Live on Facebook</span>
-                  <span className="display mt-2 block text-xl">15 Minutes with Jesus</span>
-                  <span className="mt-2 block text-[0.96rem] text-mist">{pastors.heldin.first}’s Bible talk, streamed from his Facebook page.</span>
-                </span>
-              </a>
             </div>
           </div>
         </div>

@@ -56,6 +56,10 @@ export default async function Contact({ searchParams }: { searchParams: Promise<
             <div>
               <p className="eyebrow text-[0.66rem] text-muted">Give</p>
               <p className="mt-1.5">
+                <a href={org.tithelyUrl} target="_blank" rel="noopener noreferrer" className="font-semibold text-crimson hover:underline">
+                  Online through Tithely
+                </a>
+                <br />
                 Cash App{" "}
                 <a href={org.cashUrl} target="_blank" rel="noopener noreferrer" className="font-semibold text-crimson hover:underline">
                   ${org.cashTag}

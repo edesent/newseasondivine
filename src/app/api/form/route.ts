@@ -6,9 +6,13 @@ import { org, topics } from "@/lib/site";
  * The endpoint behind every form: messages, prayer requests and visit plans,
  * and enrollment inquiries for the Seminary & Chaplaincy Institute.
  *
- * Messages go to FORM_WEBHOOK_URL (a Slack or Teams incoming webhook) so they
- * reach the pastors' phones in seconds. Until that is set the endpoint
- * answers 503 and the form honestly says it isn't connected yet.
+ * Messages are emailed to the ministry through Resend:
+ *   RESEND_API_KEY  a Resend key that can send from FORM_FROM's domain
+ *   FORM_TO         where messages go (comma-separate for more than one)
+ *   FORM_FROM       optional; defaults to "New Season Divine Ministries website <website@newseasondivineministries.com>"
+ * FORM_WEBHOOK_URL (a Slack or Teams incoming webhook) also works, alone or as
+ * well as email. Until one of them is set the endpoint answers 503 and the
+ * form honestly says it isn't connected yet.
  *
  * Spam defences: a signed load-time token (GET) that must be at least 3
  * seconds old, a honeypot field, a per-IP rate limit, and a rule that
@@ -18,7 +22,7 @@ import { org, topics } from "@/lib/site";
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
-const SECRET = process.env.FORM_SECRET || process.env.FORM_WEBHOOK_URL || "";
+const SECRET = process.env.FORM_SECRET || process.env.RESEND_API_KEY || process.env.FORM_WEBHOOK_URL || "";
 const MIN_FILL_MS = 3000;
 const MAX_AGE_MS = 1000 * 60 * 60 * 6;
 
@@ -65,6 +69,7 @@ const hasLink = (s: string) => /(https?:\/\/|www\.|\.(com|net|ru|xyz|top)\b)/i.t
 /** A phone-or-email field: an email address is fine, a web link is not. */
 const badContact = (s: string) =>
   /(https?:\/\/|www\.)/i.test(s) || (/\.(com|net|ru|xyz|top)\b/i.test(s) && !s.includes("@"));
+const isEmail = (s: string) => /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(s);
 const fake = () => NextResponse.json({ ok: true });
 
 type Body = Record<string, unknown>;
@@ -151,8 +156,11 @@ export async function POST(request: Request) {
   if ("spam" in built) return fake();
   if ("error" in built) return NextResponse.json({ error: built.error }, { status: 400 });
 
+  const key = process.env.RESEND_API_KEY;
+  const to = process.env.FORM_TO;
   const webhook = process.env.FORM_WEBHOOK_URL;
-  if (!webhook) {
+  const email = Boolean(key && to);
+  if (!email && !webhook) {
     return NextResponse.json(
       {
         error:
@@ -162,13 +170,12 @@ export async function POST(request: Request) {
     );
   }
 
+  const contact = clean(body.contact, 120);
   try {
-    const res = await fetch(webhook, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ text: built.text }),
-    });
-    if (!res.ok) throw new Error(String(res.status));
+    await Promise.all([
+      email && sendEmail(key!, to!, built.text, isEmail(contact) ? contact : undefined),
+      webhook && postWebhook(webhook, built.text),
+    ]);
   } catch {
     return NextResponse.json(
       { error: "We couldn’t send that just now. Please try again in a minute." },
@@ -176,4 +183,46 @@ export async function POST(request: Request) {
     );
   }
   return NextResponse.json({ ok: true });
+}
+
+/** The builders write Slack markdown; email gets the same lines without the markers. */
+function plain(text: string) {
+  return text
+    .split("\n")
+    .map((l) => l.replace(/\*([^*\n]+)\*/g, "$1"))
+    .join("\n");
+}
+
+async function sendEmail(key: string, to: string, text: string, replyTo?: string) {
+  const [subject, ...rest] = plain(text).split("\n");
+  const res = await fetch("https://api.resend.com/emails", {
+    method: "POST",
+    headers: { Authorization: `Bearer ${key}`, "Content-Type": "application/json" },
+    body: JSON.stringify({
+      from: process.env.FORM_FROM || `${org.name} website <website@newseasondivineministries.com>`,
+      to: to.split(",").map((t) => t.trim()).filter(Boolean),
+      ...(replyTo ? { reply_to: replyTo } : {}),
+      subject,
+      text: [
+        ...rest,
+        "",
+        "—",
+        replyTo
+          ? "Sent from the form on the New Season website. Reply to this email to answer them."
+          : "Sent from the form on the New Season website. Use the phone number above to reach them.",
+      ]
+        .join("\n")
+        .trim(),
+    }),
+  });
+  if (!res.ok) throw new Error(`resend ${res.status}`);
+}
+
+async function postWebhook(url: string, text: string) {
+  const res = await fetch(url, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ text }),
+  });
+  if (!res.ok) throw new Error(`webhook ${res.status}`);
 }

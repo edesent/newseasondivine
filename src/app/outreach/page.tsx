@@ -68,7 +68,7 @@ export default function Outreach() {
                 Our missionary department travels to Kenya, nearly 8,000 miles from Augusta, with Bibles to give out. Every trip, we want to carry more.
               </p>
               <p>
-                You can help fill the suitcases. Give through Cash App and write <strong className="text-ivory">“Kenya Bibles”</strong> in the note.
+                You can help fill the suitcases. Give online through Tithely, or through Cash App with <strong className="text-ivory">“Kenya Bibles”</strong> in the note.
               </p>
             </div>
             <figure className="mt-8 border-l-2 border-gold pl-5">
