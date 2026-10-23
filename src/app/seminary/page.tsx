@@ -96,10 +96,6 @@ export default function Seminary() {
             <p className="text-[0.92rem] text-muted">
               The six-month Certified Chaplain Program meets Monday nights from 7 to 9 PM, with the fall class beginning September 14, 2026.
             </p>
-            <p className="text-[0.92rem] text-muted">
-              A chaplain certificate from the Institute, issued together with Higher Ground Ministries, Inc. Recent chaplains have also completed the Chaplain
-              Ministry Program of the Disciples of Christ Bible College & Seminary.
-            </p>
           </div>
         </div>
       </section>
