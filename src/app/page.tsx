@@ -50,8 +50,7 @@ export default function Home() {
         <div className="wrap grid gap-10 pb-14 pt-8 lg:grid-cols-[1.25fr_0.75fr] lg:gap-16 lg:pb-16">
           <div>
             <p className="max-w-2xl text-lg text-ivory/90 md:text-[1.28rem] md:leading-relaxed">
-              {org.tagline} A Sabbath congregation and a theological seminary and chaplaincy institute, led by Senior Pastor {pastors.heldin.name} and
-              Apostle {pastors.sctonda.name}, whose voice Augusta knows from gospel radio and television.
+              A Kingdom-focused ministry dedicated to transforming lives, restoring hope, developing spiritual leaders, and empowering individuals to fulfill their God-given purpose and divine mandate. Led by Senior Pastor Dr. Heldin C. Gordon and Apostle Dr. Sctonda Kelly Gordon, whose voices are known through gospel radio and Christian television, community outreach, and apostolic missions.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link href="/worship" className="btn btn-gold">
