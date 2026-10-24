@@ -89,7 +89,7 @@ export default function Pastors() {
             </div>
           </div>
           <div data-reveal className="framed mx-auto w-full max-w-[360px] rotate-[1deg] rounded-[4px] md:order-2">
-            <Image src={photos.sctonda.src} alt={photos.sctonda.alt} width={photos.sctonda.w} height={photos.sctonda.h} sizes="360px" className="block h-auto w-full rounded-[2px]" />
+            <Image src="/photos/img-2293.jpeg" alt="Apostle Dr. Sctonda Kelly Gordon" width={1024} height={1024} sizes="360px" className="block h-auto w-full rounded-[2px]" />
           </div>
         </div>
       </section>
