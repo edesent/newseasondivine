@@ -121,6 +121,15 @@ export default function Outreach() {
               <a href="/photos/f2b3714a-5500-4e66-a8ed-fec9f28e16e1.jpeg" target="_blank" rel="noopener noreferrer" className="group block overflow-hidden rounded-xl border border-gold/30" aria-label="View Kenya ministry photo 9">
                 <img src="/photos/f2b3714a-5500-4e66-a8ed-fec9f28e16e1.jpeg" alt="NSDM Kenya ministry photo 9" loading="lazy" className="aspect-[4/3] w-full object-cover transition-transform duration-300 group-hover:scale-105" />
               </a>
+              <a href="/photos/img-0267.jpeg" target="_blank" rel="noopener noreferrer" className="group block overflow-hidden rounded-xl border border-gold/30" aria-label="View Kenya ministry photo 10">
+                <img src="/photos/img-0267.jpeg" alt="NSDM Kenya ministry photo 10" loading="lazy" className="aspect-[4/3] w-full object-cover transition-transform duration-300 group-hover:scale-105" />
+              </a>
+              <a href="/photos/img-0306.jpeg" target="_blank" rel="noopener noreferrer" className="group block overflow-hidden rounded-xl border border-gold/30" aria-label="View Kenya ministry photo 11">
+                <img src="/photos/img-0306.jpeg" alt="NSDM Kenya ministry photo 11" loading="lazy" className="aspect-[4/3] w-full object-cover transition-transform duration-300 group-hover:scale-105" />
+              </a>
+              <a href="/photos/d462b440-2207-4ee2-8aba-afc750ab0134.jpeg" target="_blank" rel="noopener noreferrer" className="group block overflow-hidden rounded-xl border border-gold/30" aria-label="View Kenya ministry photo 12">
+                <img src="/photos/d462b440-2207-4ee2-8aba-afc750ab0134.jpeg" alt="NSDM Kenya ministry photo 12" loading="lazy" className="aspect-[4/3] w-full object-cover transition-transform duration-300 group-hover:scale-105" />
+              </a>
             </div>
           </div>
         </div>
