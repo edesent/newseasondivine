@@ -139,6 +139,20 @@ export default function OnAirPage() {
           </div>
         </div>
       </section>
+
+      <section className="bg-paper py-16 md:py-24" aria-labelledby="awards-gallery-title">
+        <div className="wrap">
+          <p className="eyebrow text-[0.72rem] text-crimson">Awards &amp; recognition</p>
+          <h2 id="awards-gallery-title" className="display mt-4 text-[clamp(2rem,4.4vw,3.3rem)]">Celebrating Gospel Radio Excellence</h2>
+          <p className="mt-4 max-w-2xl text-ink/80">Stellar Gospel Announcer of the Year, Avidity Gospel Music Hall of Fame inductee, and Spin Award winner.</p>
+          <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <figure className="overflow-hidden rounded-xl bg-ivory shadow-sm">
+              <Image src="/photos/img-2267.jpeg" alt="Stellar Gospel Music Awards ceremony stage" width={600} height={800} className="h-80 w-full object-cover" />
+              <figcaption className="p-4 font-semibold">Stellar Gospel Music Awards — 2021</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
     </>
   );
 }
