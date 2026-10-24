@@ -150,6 +150,22 @@ export default function OnAirPage() {
               <Image src="/photos/img-2267.jpeg" alt="Stellar Gospel Music Awards ceremony stage" width={600} height={800} className="h-80 w-full object-cover" />
               <figcaption className="p-4 font-semibold">Stellar Gospel Music Awards — 2021</figcaption>
             </figure>
+            {[
+              { src: "/photos/img-2269.jpeg", label: "Stellar Awards recognition" },
+              { src: "/photos/img-2270.jpeg", label: "Stellar Awards celebration" },
+              { src: "/photos/img-2275.jpeg", label: "Gospel music awards memories" },
+              { src: "/photos/img-2277.jpeg", label: "Gospel music awards recognition" },
+              { src: "/photos/img-2278.jpeg", label: "Awards ceremony highlights" },
+              { src: "/photos/img-2279.jpeg", label: "Celebrating gospel broadcasting" },
+              { src: "/photos/img-2280.jpeg", label: "Gospel music honors" },
+              { src: "/photos/img-2281.jpeg", label: "Awards and recognition" },
+              { src: "/photos/img-2283.jpeg", label: "Gospel radio excellence" },
+            ].map((photo) => (
+              <figure key={photo.src} className="overflow-hidden rounded-xl bg-ivory shadow-sm">
+                <Image src={photo.src} alt={photo.label} width={600} height={800} className="h-80 w-full object-contain bg-black/5" />
+                <figcaption className="p-4 font-semibold">{photo.label}</figcaption>
+              </figure>
+            ))}
           </div>
           <div className="mt-12 max-w-3xl">
             <h3 className="display text-2xl">Stellar Awards Red Carpet Highlights</h3>
