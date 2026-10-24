@@ -118,6 +118,10 @@ export default function OnAirPage() {
                 <iframe title="The Sctonda Kelly Gordon Show — Facebook video highlight 5" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fshare%2Fv%2F1JBswEjKUd%2F&show_text=false&width=720" width="720" height="405" className="block aspect-video w-full" style={{ border: 0 }} allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen loading="lazy" />
               </div>
               <a href="https://www.facebook.com/share/v/1JBswEjKUd/" target="_blank" rel="noopener noreferrer" className="mt-4 inline-block font-semibold text-crimson hover:underline">Watch fifth video on Facebook →</a>
+              <div className="mt-8 overflow-hidden rounded-lg bg-black">
+                <iframe title="The Sctonda Kelly Gordon Show — Facebook Reel highlight" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fshare%2Fr%2F14swnRu23zu%2F&show_text=false&width=720" width="720" height="405" className="block aspect-video w-full" style={{ border: 0 }} allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen loading="lazy" />
+              </div>
+              <a href="https://www.facebook.com/share/r/14swnRu23zu/" target="_blank" rel="noopener noreferrer" className="mt-4 inline-block font-semibold text-crimson hover:underline">Watch Facebook Reel →</a>
             </div>
           </div>
         </div>
