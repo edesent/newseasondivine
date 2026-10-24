@@ -74,9 +74,7 @@ export default function Pastors() {
                 pastors, chaplains and Kingdom leaders.
               </p>
               <p>
-                She is also the program director and an on-air personality at {show.radio}, where she hosts {show.name} every weekday morning, also seen at
-                noon on {show.tv}. In 2021 the Stellar Gospel Music Awards named her Gospel Announcer of the Year, and in 2024 a two-day celebration in the
-                CSRA honored her 32 years of ministry and media.
+                She is also the General Manager and Program Director, as well as an on-air personality, at WNRR Gospel 1380 AM &amp; 93.3 FM, where she hosts The Sctonda Kelly Gordon Show every weekday morning. She also hosts Noon Day Prayer at noon on WBPI-TV 49. A multiple-award winner, she was named Gospel Announcer of the Year by the Stellar Gospel Music Awards in 2021 and has been inducted into the Avidity Recording Academy Gospel Music Hall of Fame for Radio.
               </p>
             </div>
             <div className="mt-8 flex flex-wrap gap-3">
