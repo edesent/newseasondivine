@@ -18,6 +18,9 @@ const KEYS: Record<string, string> = {
   honorary: topics[3],
   nehemiah: topics[4],
   kenya: topics[5],
+  booking: "Booking request",
+  consultation: "Consultation request",
+  interview: "Interview request",
 };
 
 // Next 16: searchParams is a Promise.
