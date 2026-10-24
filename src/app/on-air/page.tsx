@@ -134,7 +134,7 @@ export default function OnAirPage() {
             <h2 className="display mt-4 text-[clamp(2rem,4.4vw,3.3rem)]">Multi-Award-Winning Gospel Radio Announcer.</h2>
             <p className="mt-5 max-w-2xl text-[1.12rem] leading-relaxed text-ink/85">
               At the 2021 Stellar Gospel Music Awards, Dr. Sctonda Kelly Gordon of WNRR Gospel 1380 & 93.3 FM was named Gospel Announcer of the Year. In
-              2024, a two-day celebration in the CSRA honored her 32 years of ministry and media.
+              2024, a two-day celebration in the CSRA honored her 32 years of ministry and media. She is also an inductee into the Avidity Gospel Music Hall of Fame and a Spin Award winner.
             </p>
           </div>
         </div>
