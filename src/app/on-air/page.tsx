@@ -79,6 +79,26 @@ export default function OnAirPage() {
         </div>
       </section>
 
+      {/* ---------------------------------------------------------- Show interview gallery */}
+      <section id="show-interviews" className="bg-ivory py-20 md:py-28" aria-labelledby="show-interviews-title">
+        <div className="wrap">
+          <p className="eyebrow text-[0.72rem] text-crimson">Behind the microphone</p>
+          <h2 id="show-interviews-title" className="display mt-4 text-[clamp(2rem,4.4vw,3.3rem)]">The Sctonda Kelly Gordon Show — Interview Gallery</h2>
+          <p className="mt-4 max-w-3xl text-ink/80">Conversations with gospel artists, ministry leaders, and special guests. Explore memorable moments from the show, with more interview photos and videos coming soon.</p>
+          <div className="mt-10 grid gap-8 lg:grid-cols-2">
+            <figure className="overflow-hidden rounded-xl bg-paper shadow-sm">
+              <Image src="/photos/sctonda-wnrr-studio.jpg" alt="Dr. Sctonda Kelly Gordon in the WNRR radio studio" width={900} height={700} className="h-auto w-full" />
+              <figcaption className="p-5 font-semibold">Behind the Mic — WNRR Gospel 1380 AM &amp; 93.3 FM</figcaption>
+            </figure>
+            <div className="flex flex-col justify-center rounded-xl border border-ink/10 bg-paper p-7">
+              <h3 className="display text-2xl">Featured Interviews &amp; Videos</h3>
+              <p className="mt-4 leading-relaxed text-ink/80">Highlights from The Sctonda Kelly Gordon Show will feature interviews and special guest conversations shared on Facebook, Instagram, and other platforms.</p>
+              <p className="mt-4 text-sm text-ink/65">Interview videos will appear here as they are added.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ---------------------------------------------------------- Television */}
       <section id="television" className="night scroll-mt-24 py-20 md:py-28">
         <div className="wrap">
