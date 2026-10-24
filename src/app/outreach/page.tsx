@@ -131,6 +131,10 @@ export default function Outreach() {
                 <img src="/photos/d462b440-2207-4ee2-8aba-afc750ab0134.jpeg" alt="NSDM Kenya ministry photo 12" loading="lazy" className="aspect-[4/3] w-full object-cover transition-transform duration-300 group-hover:scale-105" />
               </a>
             </div>
+            <div className="mt-8 rounded-xl border border-gold/30 p-5">
+              <p className="text-mist">More moments from our Kenya ministry on Facebook:</p>
+              <div className="mt-4 flex flex-wrap gap-3"><a href="https://www.facebook.com/share/p/1QEnZGiJGu/" target="_blank" rel="noopener noreferrer" className="btn btn-gold">View Kenya Ministry Facebook Post 1 ↗</a><a href="https://www.facebook.com/share/p/1F432FX6PL/" target="_blank" rel="noopener noreferrer" className="btn btn-gold">View Kenya Ministry Facebook Post 2 ↗</a><a href="https://www.facebook.com/share/p/1CEhcYPF8P/" target="_blank" rel="noopener noreferrer" className="btn btn-gold">View Kenya Ministry Facebook Post 3 ↗</a></div>
+            </div>
           </div>
         </div>
       </section>
