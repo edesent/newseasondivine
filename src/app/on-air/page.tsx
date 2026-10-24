@@ -151,6 +151,14 @@ export default function OnAirPage() {
               <figcaption className="p-4 font-semibold">Stellar Gospel Music Awards — 2021</figcaption>
             </figure>
           </div>
+          <div className="mt-12 max-w-3xl">
+            <h3 className="display text-2xl">Stellar Awards Red Carpet Highlights</h3>
+            <p className="mt-3 text-ink/75">Dr. Sctonda Kelly Gordon on the Stellar Gospel Music Awards red carpet.</p>
+            <div className="mt-5 overflow-hidden rounded-xl bg-black">
+              <iframe title="Stellar Awards Red Carpet — Dr. Sctonda Kelly Gordon" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fshare%2Fv%2F1DSEAkyPw6%2F&show_text=false&width=720" width="720" height="405" className="block aspect-video w-full" style={{ border: 0 }} allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen loading="lazy" />
+            </div>
+            <a href="https://www.facebook.com/share/v/1DSEAkyPw6/" target="_blank" rel="noopener noreferrer" className="mt-4 inline-block font-semibold text-crimson hover:underline">Watch on Facebook →</a>
+          </div>
         </div>
       </section>
     </>
