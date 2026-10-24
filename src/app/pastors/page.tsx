@@ -26,6 +26,11 @@ export default function Pastors() {
   return (
     <>
       <PageHead eyebrow="Our pastors" title="Husband and wife, side by side." lead={`${pastors.heldin.name} and ${pastors.sctonda.name} lead ${org.name} together.`} />
+      <section className="bg-paper pt-10 pb-6">
+        <div className="wrap">
+          <Image src="/photos/e6a1ece5-20df-49b5-91fc-1b717cf7d3cd.png" alt="Apostle Dr. Sctonda Kelly Gordon and Senior Pastor Dr. Heldin C. Gordon — Husband and Wife, Side by Side" width={1343} height={1119} sizes="(min-width: 1024px) 1100px, 100vw" className="mx-auto h-auto w-full max-w-5xl rounded-xl" />
+        </div>
+      </section>
 
       {/* ---------------------------------------------------------- Pastor Heldin */}
       <section className="bg-paper py-20 md:py-28">
