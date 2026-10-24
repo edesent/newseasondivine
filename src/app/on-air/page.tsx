@@ -137,7 +137,8 @@ export default function OnAirPage() {
               <div className="mt-8 overflow-hidden rounded-lg bg-black">
                 <iframe title="Noon Day Prayer with Dr. Sctonda Kelly Gordon — Special Guest: Grandson NaZir Trosper" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fshare%2Fv%2F19sTiGdZPv%2F&show_text=false&width=720" width="720" height="405" className="block aspect-video w-full" style={{ border: 0 }} allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen loading="lazy" />
               </div>
-              <a href="https://www.facebook.com/share/v/19sTiGdZPv/" target="_blank" rel="noopener noreferrer" className="mt-4 inline-block font-semibold text-crimson hover:underline">Watch new video on Facebook →</a>
+              <p className="mt-4 font-semibold text-ink">Noon Day Prayer with Dr. Sctonda Kelly Gordon — Special Guest: Grandson NaZir Trosper</p>
+              <a href="https://www.facebook.com/share/v/19sTiGdZPv/" target="_blank" rel="noopener noreferrer" className="mt-2 inline-block font-semibold text-crimson hover:underline">Watch Noon Day Prayer on Facebook →</a>
             </div>
           </div>
         </div>
