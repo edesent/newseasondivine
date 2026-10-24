@@ -128,7 +128,8 @@ export default function Elevation() {
           </div>
           <div className="mt-12 rounded-xl border border-gold/40 bg-paper p-6 md:p-8">
             <h3 className="display text-2xl">Elevation Ceremony Videos</h3>
-            <p className="mt-3 max-w-2xl text-ink/75">Facebook ceremony videos and additional graduation photographs will be featured here as they are provided and verified.</p>
+            <p className="mt-3 max-w-2xl text-ink/75">Explore graduation and Ecumenical Elevation moments shared on Facebook. Additional ceremony videos and photographs will be added as they are provided.</p>
+            <a href="https://www.facebook.com/share/p/1FDRQ6v2fz/" target="_blank" rel="noopener noreferrer" className="btn btn-crimson mt-5">View Graduation Facebook Post ↗</a>
           </div>
         </div>
       </section>
