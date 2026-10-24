@@ -75,6 +75,7 @@ export const nav = [
   { href: "/outreach", label: "Outreach & Missions", short: "Outreach" },
   { href: "/on-air", label: "Radio & Television", short: "On Air" },
   { href: "/pastors", label: "Our Pastors", short: "Pastors" },
+  { href: "/bookings", label: "Bookings, Consultations & Interview Requests", short: "Bookings" },
   { href: "/contact", label: "Contact", short: "Contact" },
 ];
 
