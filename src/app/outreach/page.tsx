@@ -89,9 +89,39 @@ export default function Outreach() {
           </div>
         </div>
         <div className="wrap mt-16">
-          <div data-reveal className="rounded-2xl border border-dashed border-gold/50 p-6 text-center text-mist md:p-8">
-            <p className="display text-xl text-ivory">Photos from Kenya and from outreach days go here.</p>
-            <p className="mt-2 text-[0.98rem]">Send us your pictures from the trips and the workshops, and we’ll build this into a gallery.</p>
+          <div data-reveal>
+            <p className="eyebrow text-[0.72rem] text-gold-hi">International ministry</p>
+            <h3 className="display mt-3 text-3xl text-ivory">Kenya Ministry Photo Gallery</h3>
+            <p className="mt-3 max-w-2xl text-mist">Moments from our ministry work and fellowship in Kenya.</p>
+            <div className="mt-8 grid grid-cols-2 gap-4 md:grid-cols-3">
+              <a href="/photos/img-0298.jpeg" target="_blank" rel="noopener noreferrer" className="group block overflow-hidden rounded-xl border border-gold/30" aria-label="View Kenya ministry photo 1">
+                <img src="/photos/img-0298.jpeg" alt="NSDM Kenya ministry photo 1" loading="lazy" className="aspect-[4/3] w-full object-cover transition-transform duration-300 group-hover:scale-105" />
+              </a>
+              <a href="/photos/img-0307.jpeg" target="_blank" rel="noopener noreferrer" className="group block overflow-hidden rounded-xl border border-gold/30" aria-label="View Kenya ministry photo 2">
+                <img src="/photos/img-0307.jpeg" alt="NSDM Kenya ministry photo 2" loading="lazy" className="aspect-[4/3] w-full object-cover transition-transform duration-300 group-hover:scale-105" />
+              </a>
+              <a href="/photos/img-2262.jpeg" target="_blank" rel="noopener noreferrer" className="group block overflow-hidden rounded-xl border border-gold/30" aria-label="View Kenya ministry photo 3">
+                <img src="/photos/img-2262.jpeg" alt="NSDM Kenya ministry photo 3" loading="lazy" className="aspect-[4/3] w-full object-cover transition-transform duration-300 group-hover:scale-105" />
+              </a>
+              <a href="/photos/img-2263.jpeg" target="_blank" rel="noopener noreferrer" className="group block overflow-hidden rounded-xl border border-gold/30" aria-label="View Kenya ministry photo 4">
+                <img src="/photos/img-2263.jpeg" alt="NSDM Kenya ministry photo 4" loading="lazy" className="aspect-[4/3] w-full object-cover transition-transform duration-300 group-hover:scale-105" />
+              </a>
+              <a href="/photos/img-2264.jpeg" target="_blank" rel="noopener noreferrer" className="group block overflow-hidden rounded-xl border border-gold/30" aria-label="View Kenya ministry photo 5">
+                <img src="/photos/img-2264.jpeg" alt="NSDM Kenya ministry photo 5" loading="lazy" className="aspect-[4/3] w-full object-cover transition-transform duration-300 group-hover:scale-105" />
+              </a>
+              <a href="/photos/img-2265.jpeg" target="_blank" rel="noopener noreferrer" className="group block overflow-hidden rounded-xl border border-gold/30" aria-label="View Kenya ministry photo 6">
+                <img src="/photos/img-2265.jpeg" alt="NSDM Kenya ministry photo 6" loading="lazy" className="aspect-[4/3] w-full object-cover transition-transform duration-300 group-hover:scale-105" />
+              </a>
+              <a href="/photos/img-2266.jpeg" target="_blank" rel="noopener noreferrer" className="group block overflow-hidden rounded-xl border border-gold/30" aria-label="View Kenya ministry photo 7">
+                <img src="/photos/img-2266.jpeg" alt="NSDM Kenya ministry photo 7" loading="lazy" className="aspect-[4/3] w-full object-cover transition-transform duration-300 group-hover:scale-105" />
+              </a>
+              <a href="/photos/8beacfd9-1f49-4eb0-b10b-ef8654850b03.jpeg" target="_blank" rel="noopener noreferrer" className="group block overflow-hidden rounded-xl border border-gold/30" aria-label="View Kenya ministry photo 8">
+                <img src="/photos/8beacfd9-1f49-4eb0-b10b-ef8654850b03.jpeg" alt="NSDM Kenya ministry photo 8" loading="lazy" className="aspect-[4/3] w-full object-cover transition-transform duration-300 group-hover:scale-105" />
+              </a>
+              <a href="/photos/f2b3714a-5500-4e66-a8ed-fec9f28e16e1.jpeg" target="_blank" rel="noopener noreferrer" className="group block overflow-hidden rounded-xl border border-gold/30" aria-label="View Kenya ministry photo 9">
+                <img src="/photos/f2b3714a-5500-4e66-a8ed-fec9f28e16e1.jpeg" alt="NSDM Kenya ministry photo 9" loading="lazy" className="aspect-[4/3] w-full object-cover transition-transform duration-300 group-hover:scale-105" />
+              </a>
+            </div>
           </div>
         </div>
       </section>
