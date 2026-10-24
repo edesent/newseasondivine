@@ -133,7 +133,7 @@ export default function Outreach() {
             </div>
             <div className="mt-8 rounded-xl border border-gold/30 p-5">
               <p className="text-mist">More moments from our Kenya ministry on Facebook:</p>
-              <a href="https://www.facebook.com/share/p/1QEnZGiJGu/" target="_blank" rel="noopener noreferrer" className="btn btn-gold mt-4">View Kenya Ministry Facebook Post ↗</a>
+              <div className="mt-4 flex flex-wrap gap-3"><a href="https://www.facebook.com/share/p/1QEnZGiJGu/" target="_blank" rel="noopener noreferrer" className="btn btn-gold">View Kenya Ministry Facebook Post 1 ↗</a><a href="https://www.facebook.com/share/p/1F432FX6PL/" target="_blank" rel="noopener noreferrer" className="btn btn-gold">View Kenya Ministry Facebook Post 2 ↗</a></div>
             </div>
           </div>
         </div>
