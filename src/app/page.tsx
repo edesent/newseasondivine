@@ -252,6 +252,9 @@ export default function Home() {
             <p className="eyebrow text-[0.72rem] text-crimson">Our pastors</p>
             <h2 className="display mt-4 text-[clamp(2rem,4.4vw,3.4rem)]">Husband and wife, side by side.</h2>
           </div>
+          <div className="mt-8 overflow-hidden rounded-xl">
+            <Image src="/photos/e6a1ece5-20df-49b5-91fc-1b717cf7d3cd.png" alt="Apostle Dr. Sctonda Kelly Gordon and Senior Pastor Dr. Heldin C. Gordon — Husband and Wife, Side by Side" width={1343} height={1119} sizes="(min-width: 1024px) 1100px, 100vw" className="h-auto w-full" />
+          </div>
           <div className="mt-12 grid gap-10 md:grid-cols-2 md:gap-12">
             {[
               {
