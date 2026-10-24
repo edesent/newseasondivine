@@ -181,10 +181,10 @@ export default function OnAirPage() {
         <div className="wrap grid items-center gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:gap-16">
           <div data-reveal className="framed mx-auto w-full max-w-[420px] rounded-[4px]">
             <Image
-              src={photos.doveAwards.src}
-              alt={photos.doveAwards.alt}
-              width={photos.doveAwards.w}
-              height={photos.doveAwards.h}
+              src="/photos/img-2302.jpeg"
+              alt="Dr. Sctonda Kelly Gordon wearing a red plaid shawl at an event"
+              width={960}
+              height={960}
               sizes="(min-width: 1024px) 420px, 90vw"
               className="block h-auto w-full rounded-[2px]"
             />
