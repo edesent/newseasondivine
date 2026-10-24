@@ -224,5 +224,8 @@ export const topics = [
   "The Nehemiah Project (for pastors)",
   "The Kenya mission",
   "Book Pastor Heldin or Apostle Sctonda",
+  "Booking request",
+  "Consultation request",
+  "Interview request",
   "Something else",
 ];
