@@ -106,6 +106,33 @@ export default function Elevation() {
           </figure>
         </div>
       </section>
+
+      <section id="graduation-gallery" className="bg-ivory py-16 md:py-24">
+        <div className="wrap">
+          <p className="eyebrow text-crimson">Celebrating Kingdom leaders</p>
+          <h2 className="display mt-3 text-[clamp(2rem,4.5vw,3.5rem)]">Graduation & Ecumenical Elevation Gallery</h2>
+          <p className="mt-4 max-w-3xl text-lg text-ink/75">A look back at special moments of achievement, recognition and commissioning at New Season Divine Ministries Theological Seminary & Chaplaincy Institute.</p>
+          <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {[
+              { src: "/photos/graduation-sanctuary.jpg", caption: "Graduation celebration" },
+              { src: "/photos/graduation-line.jpg", caption: "Celebrating our graduates" },
+              { src: "/photos/chaplains-four.jpg", caption: "Chaplaincy graduates" },
+            ].map((item) => (
+              <figure key={item.src} className="overflow-hidden rounded-xl border border-gold/30 bg-paper shadow-sm">
+                <div className="relative aspect-[4/3]">
+                  <Image src={item.src} alt={item.caption} fill sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw" className="object-cover" />
+                </div>
+                <figcaption className="p-4 font-semibold text-ink">{item.caption}</figcaption>
+              </figure>
+            ))}
+          </div>
+          <div className="mt-12 rounded-xl border border-gold/40 bg-paper p-6 md:p-8">
+            <h3 className="display text-2xl">Elevation Ceremony Videos</h3>
+            <p className="mt-3 max-w-2xl text-ink/75">Explore graduation and Ecumenical Elevation moments shared on Facebook. Additional ceremony videos and photographs will be added as they are provided.</p>
+            <div className="mt-5 flex flex-wrap gap-3"><a href="https://www.facebook.com/share/p/1FDRQ6v2fz/" target="_blank" rel="noopener noreferrer" className="btn btn-crimson">View Graduation Facebook Post 1 ↗</a><a href="https://www.facebook.com/share/p/19dY8RYQwG/" target="_blank" rel="noopener noreferrer" className="btn btn-crimson">View Graduation Facebook Post 2 ↗</a><a href="https://www.facebook.com/share/p/1M9viTowkE/" target="_blank" rel="noopener noreferrer" className="btn btn-crimson">View Graduation Facebook Post 3 ↗</a><a href="https://www.facebook.com/share/p/1SkVFw8bqB/" target="_blank" rel="noopener noreferrer" className="btn btn-crimson">View Graduation Facebook Post 4 ↗</a></div>
+          </div>
+        </div>
+      </section>
     </>
   );
 }
