@@ -101,6 +101,29 @@ export default function Worship() {
         </div>
       </section>
 
+      <section className="bg-paper py-20 md:py-28">
+        <div className="wrap mx-auto max-w-4xl">
+          <p className="eyebrow text-[0.72rem] text-crimson">Sabbath Worship Video</p>
+          <h2 className="display mt-4 text-[clamp(2rem,4.4vw,3.2rem)]">A Message from Dr. Heldin Gordon</h2>
+          <p className="mt-5 text-[1.1rem] leading-relaxed text-ink/80">Watch this video featuring Senior Pastor Dr. Heldin Gordon.</p>
+          <div className="mt-8 overflow-hidden rounded-lg bg-black">
+            <iframe
+              src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fshare%2Fv%2F1KhX6fgeCS%2F&show_text=false&width=800"
+              title="Dr. Heldin Gordon — Sabbath Worship"
+              width="800"
+              height="450"
+              className="aspect-video w-full"
+              style={{ border: "none", overflow: "hidden" }}
+              scrolling="no"
+              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+              allowFullScreen
+              loading="lazy"
+            />
+          </div>
+          <a href="https://www.facebook.com/share/v/1KhX6fgeCS/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className="btn btn-gold mt-6">Watch the video on Facebook</a>
+        </div>
+      </section>
+
       <section id="visit" className="scroll-mt-24 bg-ivory py-20 md:py-28">
         <div className="wrap grid gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:gap-16">
           <div data-reveal>
