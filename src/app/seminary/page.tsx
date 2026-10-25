@@ -50,6 +50,12 @@ export default function Seminary() {
         </div>
       </PageHead>
 
+      <section aria-label="Seminary and Chaplaincy Fall Enrollment Flyer" className="bg-paper py-8 md:py-12">
+        <div className="wrap mx-auto max-w-4xl">
+          <Image src="/images/img-2378.jpeg" alt="New Season Divine Ministries Theological Seminary and Chaplaincy Institute fall enrollment schedule, online certificate and degree programs" width={1024} height={1536} priority sizes="(min-width: 1024px) 896px, 100vw" className="mx-auto block h-auto w-full rounded-lg" />
+        </div>
+      </section>
+
       {/* ---------------------------------------------------------- Chaplaincy */}
       <section className="bg-paper py-20 md:py-28">
         <div className="wrap grid gap-14 lg:grid-cols-[1.1fr_0.9fr] lg:gap-20">
