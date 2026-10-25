@@ -121,6 +121,11 @@ export default function Worship() {
             />
           </div>
           <a href="https://www.facebook.com/share/v/1KhX6fgeCS/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className="btn btn-gold mt-6">Watch the video on Facebook</a>
+          <div className="mt-12 border-t border-ink/15 pt-8">
+            <h3 className="display text-[clamp(1.5rem,3vw,2.2rem)]">More from Sabbath Worship</h3>
+            <p className="mt-3 text-ink/80">View this additional Facebook post shared with our worship community.</p>
+            <a href="https://www.facebook.com/share/1dk2prbES6/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className="btn btn-gold mt-6">View on Facebook</a>
+          </div>
         </div>
       </section>
 
