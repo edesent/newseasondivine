@@ -79,6 +79,29 @@ export default function OnAirPage() {
         </div>
       </section>
 
+      {/* ---------------------------------------------------------- The Gordons at Home */}
+      <section id="the-gordons-at-home" className="bg-ivory py-20 md:py-28" aria-labelledby="gordons-at-home-title">
+        <div className="wrap grid items-center gap-12 lg:grid-cols-[0.95fr_1.05fr] lg:gap-16">
+          <div className="overflow-hidden rounded-xl border border-ink/10 bg-paper shadow-sm">
+            <div className="p-5 text-center">
+              <p className="eyebrow text-[0.72rem] text-crimson">Premiere show • Episode 1</p>
+              <p className="mt-3 text-sm text-ink/70">Official show flyer: The Gordons at Home — After I Do</p>
+            </div>
+            <div className="border-t border-ink/10 p-5 text-center text-sm text-ink/70">
+              The original promotional flyer will appear here as soon as its photo upload is completed.
+            </div>
+          </div>
+          <div>
+            <p className="eyebrow text-[0.72rem] text-crimson">Sunday nights • Facebook Live</p>
+            <h2 id="gordons-at-home-title" className="display mt-4 text-[clamp(2rem,4.4vw,3.3rem)]">#TheGordons at Home</h2>
+            <p className="mt-5 text-lg leading-relaxed text-ink/85">Join Senior Pastor Dr. Heldin C. Gordon and Apostle Dr. Sctonda Kelly Gordon for real discussions, intentional prayer, and inspiration about family, marriage, ministry, and music.</p>
+            <h3 className="display mt-7 text-2xl">Episode 1: “After I Do”</h3>
+            <p className="mt-3 text-ink/80">Things you quickly learn after the wedding — plus practical steps to keep husband and wife on one accord. Honest conversations, biblical wisdom, and real-life experiences.</p>
+            <p className="mt-6 font-semibold text-crimson">Live every Sunday night at 9:00 PM Eastern on Facebook.</p>
+          </div>
+        </div>
+      </section>
+
       {/* ---------------------------------------------------------- Show interview gallery */}
       <section id="show-interviews" className="bg-ivory py-20 md:py-28" aria-labelledby="show-interviews-title">
         <div className="wrap">
