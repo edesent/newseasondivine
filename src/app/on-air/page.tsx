@@ -87,9 +87,7 @@ export default function OnAirPage() {
               <p className="eyebrow text-[0.72rem] text-crimson">Premiere show • Episode 1</p>
               <p className="mt-3 text-sm text-ink/70">Official show flyer: The Gordons at Home — After I Do</p>
             </div>
-            <div className="border-t border-ink/10 p-5 text-center text-sm text-ink/70">
-              The original promotional flyer will appear here as soon as its photo upload is completed.
-            </div>
+            <Image src="/photos/867413229-29114573098161264-9067167987294848165-n.jpg" alt="The Gordons at Home premiere flyer — After I Do, Sunday nights at 9 PM Eastern on Facebook Live" width={526} height={526} sizes="(min-width: 1024px) 480px, 90vw" className="block h-auto w-full" />
           </div>
           <div>
             <p className="eyebrow text-[0.72rem] text-crimson">Sunday nights • Facebook Live</p>
