@@ -72,7 +72,7 @@ export const nav = [
   { href: "/about", label: "About New Season", short: "About" },
   { href: "/worship", label: "Sabbath Worship", short: "Worship" },
   { href: "/seminary", label: "Seminary & Chaplaincy", short: "Seminary" },
-  { href: "/outreach", label: "Outreach & Missions", short: "Outreach" },
+  { href: "/outreach", label: "Apostolic Outreach & Missions", short: "Outreach" },
   { href: "/on-air", label: "Radio & Television", short: "On Air" },
   { href: "/pastors", label: "Our Pastors", short: "Pastors" },
   { href: "/bookings", label: "Bookings, Consultations & Interview Requests", short: "Bookings" },
