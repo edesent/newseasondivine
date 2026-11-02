@@ -6,7 +6,7 @@ import PageHead from "@/components/PageHead";
 import { org } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Outreach & Missions",
+  title: "Apostolic Outreach & Missions",
   description: `${org.name} hosts family enrichment workshops, feeds families in ${org.city}, and helps its missionary department carry Bibles to Kenya.`,
   alternates: { canonical: "/outreach" },
 };
