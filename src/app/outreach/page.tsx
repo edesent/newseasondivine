@@ -20,6 +20,8 @@ export default function Outreach() {
         lead="We host family enrichment workshops, feed families through our outreach, and help our missionary department carry Bibles to Kenya."
       />
 
+      <section className="bg-paper py-10"><div className="wrap"><div className="rounded-xl border border-gold/30 p-6"><h2 className="display text-2xl">Apostolic Outreach & Missions — Ministry Updates</h2><p className="mt-3">See our latest outreach ministry post on Facebook.</p><a className="btn btn-crimson mt-5" href="https://www.facebook.com/share/p/19xayjacoZ/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">View Outreach Facebook Post ↗</a></div></div></section>
+
       {/* ---------------------------------------------------------- Families */}
       <section className="bg-paper py-20 md:py-28">
         <div className="wrap">
