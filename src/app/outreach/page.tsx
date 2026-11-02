@@ -15,7 +15,7 @@ export default function Outreach() {
   return (
     <>
       <PageHead
-        eyebrow="Outreach & missions"
+        eyebrow="Apostolic Outreach & Missions"
         title="At home in Augusta, and as far as Kenya."
         lead="We host family enrichment workshops, feed families through our outreach, and help our missionary department carry Bibles to Kenya."
       />
